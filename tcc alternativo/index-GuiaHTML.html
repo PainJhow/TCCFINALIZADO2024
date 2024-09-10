@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Hyperium - Guia HTML</title>
+
+    <!-- Linkar - CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-guiaHTML.css">
+
+</head>
+<body>
+    
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Html</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="oqe">
+                <h1>Guia Basico do HTML</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar <br>
+                    o conteúdo de páginas web. Ele consiste em elementos, cada um representando uma <br>
+                    parte da página, como títulos, parágrafos, listas, links, imagens, etc.</p>
+            </div>
+        </div>
+
+        <div class="div"><h3>Vamos ao Aprendizado ?</h3></div>
+
+        <div class="topico2">
+            <div class="title">
+                <h2>Estrutura Básica</h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">O esqueleto básico de um documento HTML inclui as tags &lt;html&gt;, &lt;head&gt;, &lt;titl&gt;, <br>
+                    &lt;body&gt;, e outros elementos opcionais. A tag &lt;!DOCTYPE html&gt; define a versão do <br>
+                    HTML.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example1">
+     &lt;!DOCTYPE html&gt;
+     &lt;html lang="pt-br"&gt;
+     &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;title&gt;Título da Página&lt;/title&gt;
+     &lt;/head&gt;
+     &lt;body&gt;
+     &lt;!-- Conteúdo da Página --&gt;
+     &lt;/body&gt;
+     &lt;/html&gt;
+                    </pre>
+                    <button onclick="copyCode()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função &lt;!DOCTYPE html&gt;</li>
+                    <p>Declara a versão do HTML sendo utilizada.</p>
+                    <li class="atributos">Função &lt;html lang="pt-br"&gt;</li>
+                    <p>Define o idioma da página.</p>
+                    <li class="atributos">Função &lt;meta charset="UTF-8"&gt;</li>
+                    <p>Especifica o conjunto de caracteres UTF-8 para suportar diversos idiomas.</p>
+                    <li class="atributos">Função &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</li>
+                    <p>Configura a escala inicial e largura da tela para dispositivos móveis.</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="div"><h2>Títulos e Parágrafos</h2></div>
+
+        <div class="topico3">
+            <div class="title">
+                <h1>Títulos</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">As tags de título &lt;h1&gt; a &lt;h6&gt; são usadas para definir os níveis de cabeçalho, <br>
+                    indicando a hierarquia do conteúdo.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example2">
+                        &lt;h1&gt;Este é um Título de Nível 1&lt;/h1&gt;
+                        &lt;h2&gt;Este é um Título de Nível 2&lt;/h2&gt;
+                        &lt;!-- ... Até h6 --&gt;
+                    </pre>
+                    <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                </div>
+                <p class="alinhar">Cada nível de título indica uma importância relativa do conteúdo, com &lt;h1&gt; sendo <br>
+                    o mais importante e &lt;h6&gt; o menos importante.
+                </p>
+            </div>
+            <div class="title">
+                <h1>Parágrafos</h1>
+            </div>
+            <div class="sobre">
+                <p>
+                    A tag &lt;p&gt; é utilizada para definir parágrafos no HTML.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example3">
+                        &lt;p&gt;Isto é um parágrafo.&lt;/p&gt;
+                        &lt;p&gt;Outro parágrafo aqui.&lt;/p&gt;
+                    </pre>
+                    <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                </div>
+                <p class="alinhar">
+                    A tag &lt;p&gt; é usada para envolver o texto de cada parágrafo, facilitando a <br>
+                    formatação e leitura do conteúdo.
+                </p>
+            </div>
+        </div>
+
+        <div class="div"><h2>Listas</h2></div>
+
+        <div class="topico4">
+            <div class="title">
+                <h1>Lista Não Ordenada</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">A tag &lt;ul&gt; é usada para criar listas não ordenadas, e &lt;li&gt; para cada item da lista.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example4">
+                        &lt;ul&gt;
+                            &lt;li&gt;Item 1&lt;/li>&gt;
+                            &lt;li&gt;Item 2&lt;/li>&gt;
+                            &lt;li&gt;Item 3&lt;/li>&gt;
+                        &lt;/ul&gt;
+                    </pre>
+                    <button onclick="copyCode4()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função ul</li>
+                    <p>indica o início de uma lista não ordenada.</p>
+                    <li class="atributos">Função li</li>
+                    <p>define cada item na lista.</p>
+                </ul>
+            </div>
+            <div class="title">
+                <h1>Lista Ordenada</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    A tag &lt;ol&gt; é usada para criar listas ordenadas.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example5">
+                        &lt;ol&gt;
+                           &lt;li&gt;Primeiro Item&lt;/li&gt;
+                           &lt;li&gt;Segundo Item&lt;/li&gt;
+                           &lt;li&gt;Terceiro Item&lt;/li&gt;
+                        &lt;ol&gt;
+                    </pre>
+                    <button onclick="copyCode5()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função ol</li>
+                    <p>indica o início de uma lista ordenada.</p>
+                    <li class="atributos">Função li</li>
+                    <p>define cada item na lista.</p>
+                </ul>
+                <p class="alinhar">
+                    A principal diferença é que as listas ordenadas exibem números ou letras para <br>
+                    indicar a ordem, enquanto as listas não ordenadas utilizam marcadores.
+                </p>
+            </div>
+        </div>
+
+        <div class="topico5">
+            <div class="title">
+                <h1>Links</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">A tag &lt;a&gt; cria links. O atributo href especifica o destino do link.</p>
+                <div class="example-box">
+                    <pre id="code-example6">
+    &lt;a href="https://www.exemplo.com"&gt;Texto do Link&lt;/a&gt;
+                    </pre>
+                    <button onclick="copyCode6()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função Href</li>
+                    <p>contém o URL para o qual o link aponta.</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topico6">
+            <div class="title">
+                <h1>Imagens</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    A tag &lt;img&gt; é usada para incorporar imagens. O atributo src especifica o caminho <br>
+                    da imagem e alt fornece uma descrição alternativa.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example7">
+            &lt;img src="caminho/para/imagem.jpg" alt="Descrição da Imagem"&gt;
+                    </pre>
+                    <button onclick="copyCode7()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função src</li>
+                    <p>define o caminho da imagem.</p>
+                    <li class="atributos">Função alt</li>
+                    <p>fornece um texto alternativo para a imagem, importante para acessibilidade.</p>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="topico7">
+            <div class="title">
+                <h1>Formulários</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    A tag &lt;form&gt; é usada para criar formulários interativos. Os elementos &lt;label&gt;, <br>
+                    &gt;input&gt;, e &lt;button&gt; são frequentemente utilizados.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example8">
+            &lt;form action="/processar" method="post"&gt;
+                &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+                &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;
+            
+                &lt;label for="email"&gt;Email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+            
+                &lt;input type="submit" value="Enviar"&gt;
+            &lt;/form&gt;
+                    </pre>
+                    <button onclick="copyCode8()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função action</li>
+                    <p>especifica o URL para o qual os dados do formulário serão enviados.</p>
+                    <li class="atributos">Função method</li>
+                    <p>indica o método de envio, geralmente 'get' ou 'post'.</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="div"><h2>Estilos</h2></div>
+
+        <div class="topico8">
+            <div class="title">
+                <h1>Estilo Inline</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Você pode aplicar estilos diretamente a um elemento usando o atributo style.
+
+                </p>
+                <div class="example-box">
+                    <pre id="code-example9">
+&lt;p style="color: red; font-size: 16px;"&gt;Este parágrafo possui estilos inline.&lt;/p&gt; 
+                    </pre>
+                    <button onclick="copyCode9()" class="copy-button">Copiar</button>
+                </div>
+                <p class="alinhar">O atributo style contém as regras de estilo CSS, como cor e tamanho da fonte.</p>
+            </div>
+            <div class="title">
+                <h1>Folha de Estilo Externa</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    A tag &lt;link&gt; é usada para vincular uma folha de estilo externa ao documento HTML.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example10">
+                        &lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;
+                    </pre>
+                    <button onclick="copyCode10()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função rel="stylesheet"</li>
+                    <p>indica que o link é para uma folha de estilo.</p>
+                    <li class="atributos">Função type="text/css</li>
+                    <p>especifica o tipo de arquivo.</p>
+                    <li class="atributos">Função href</li>
+                    <p>contém o caminho para a folha de estilo externa.</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topico9">
+            <div class="title">
+                <h1>Tabelas</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    A tag &lt;table&gt; é usada para criar tabelas. As tabelas consistem em linhas (&lt;tr&gt;), <br>
+                    colunas (&lt;td&gt; para células de dados) e cabeçalhos (&lt;th&gt; para cabeçalhos de <br>
+                    coluna ou linha).
+                </p>
+                <div class="example-box">
+                    <pre id="code-example11">
+                    &lt;table&gt;
+                        <tr>
+                            &lt;th&gt;Header 1&lt;/th&gt;
+                            &lt;th&gt;Header 2&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Dado 1&lt;/td&gt;
+                            &lt;td&gt;Dado 2&lt;/td&gt;
+                        &gt;/tr&lt;
+                    &lt;/table&gt;
+                    </pre>
+                    <button onclick="copyCode11()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função &lt;table&gt;</li>
+                    <p>define a tabela.</p>
+                    <li class="atributos">Função &lt;tr&gt;</li>
+                    define uma linha.
+                    <li class="atributos">Função &lt;th&gt;</li>
+                    define um cabeçalho (opcional).
+                    <li class="atributos">Função &lt;td&gt;</li>
+                    define uma célula de dados.
+                </ul>
+            </div>
+        </div>
+
+        <div class="topico10">
+            <div class="title">
+                <h1>Comentários</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Comentários no HTML são úteis para documentar o código. Eles não são exibidos na <br>
+                    página, mas podem ser visualizados no código-fonte.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example12">
+                    &lt;!-- Este é um comentário HTML --&gt;
+                    </pre>
+                    <button onclick="copyCode12()" class="copy-button">Copiar</button>
+                </div>
+                <p>
+                    Comentários começam com &lt;!-- e terminam com --&gt;.
+                </p>
+            </div>
+        </div>
+
+        <div class="topico11">
+            <div class="title">
+                <h1>Elementos Semânticos</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Elementos semânticos fornecem significado ao conteúdo. Alguns exemplos incluem <br>
+                    &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;section&gt;, &lt;footer&gt;. Eles ajudam a estruturar a página <br>
+                    de maneira mais compreensível para os desenvolvedores e navegadores.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example13">
+                    &lt;header&gt;
+                      &lt;h1&gt;Título do Cabeçalho&lt;/h1&gt;
+                    &lt;/header&gt;
+                    </pre>
+                    <button onclick="copyCode13()" class="copy-button">Copiar</button>
+                </div>
+                <p>
+                    Elementos semânticos dão sentido ao conteúdo, facilitando a leitura e manutenção do código.
+                </p>
+            </div>
+        </div>
+
+        <div class="topico12">
+            <div class="title">
+                <h1>Vídeos e Áudio</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    As tags &lt;video&gt; e &lt;audio&gt; são usadas para incorporar conteúdo multimídia em uma página web.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example14">
+                    &lt;video width="320" height="240" controls&gt;
+                      &lt;source src="video.mp4" type="video/mp4"&gt;
+                      Seu navegador não suporta o elemento de vídeo.
+                    &lt;/video&gt;
+                  
+                    &lt;audio controls&gt;
+                      &lt;source src="audio.mp3" type="audio/mp3"&gt;
+                      Seu navegador não suporta o elemento de áudio.
+                    &lt;/audio&gt;
+                    </pre>
+                    <button onclick="copyCode14()" class="copy-button">Copiar</button>
+                </div>
+                <p>
+                    A tag&lt;source&gt; define a origem do conteúdo multimídia. <br>
+                    O atributo controls adiciona controles de reprodução.
+                </p>
+            </div>
+        </div>
+        <div class="topico13">
+            <div class="title">
+                <h1>Mapas de Imagem</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    A tag &lt;map&gt; junto com &lt;area&gt; é usada para criar mapas de imagem interativos.
+                </p>
+                <div class="example-box">
+                    <pre id="code-example15">
+    &lt;img src="plano.png" alt="Plano" usemap="#mapa"&gt;
+    &lt;map name="mapa"&gt;
+        &lt;area shape="rect" coords="0,0,50,50" href="area1.html" alt="Área 1"&gt;
+        &lt;area shape="circle" coords="100,100,50" href="area2.html" alt="Área 2"&gt;
+    &lt;/map&gt;
+                    </pre>
+                    <button onclick="copyCode15()" class="copy-button">Copiar</button>
+                </div>
+                <ul>
+                    <li class="atributos">Função &lt;map&gt;</li>
+                    <p>define a área do mapa de imagem.</p>
+                    <li class="atributos">Função &lt;area&gt;</li>
+                    define as áreas interativas no mapa.
+                </ul>
+            </div>
+        </div>
+        
+        <div class="topico14">
+            <div class="title">
+                <h1>Esperamos Ter Ajudado Você!!</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Explore as infinitas possibilidades do HTML e dê vida à sua visão na web. Este guia <br>
+                    abrangente oferece a base sólida necessária para criar páginas web dinâmicas e <br>
+                    funcionais. Aprofunde-se nos diversos elementos, desde estruturação de texto até <br>
+                    incorporação de multimídia, e descubra como moldar experiências online envolventes. <br>
+                    Continue explorando, experimentando e aprimorando suas habilidades, pois o HTML é a <br>
+                    porta de entrada para um mundo ilimitado de criação na internet. Boa jornada! <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+
+    <script src="java/script-guiaHTML.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

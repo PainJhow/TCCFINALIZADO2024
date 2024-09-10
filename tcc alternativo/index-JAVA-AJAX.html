@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>AJAX e Assíncronas - Hyperium</title>
+
+    <!-- Linkar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-AJAX.css">
+
+</head>
+<body>
+
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Ajax</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="title">
+                <h1>Introdução a AJAX</h1>
+            </div>
+            <div class="sobretitle">
+                <div class="sobre">
+                    <p class="alinhar">AJAX (Asynchronous JavaScript and XML) é uma técnica de desenvolvimento web que <br>
+                        permite a atualização de partes de uma página da web sem recarregar a página <br>
+                        inteira. Isso melhora a experiência do usuário, pois as páginas se tornam mais <br>
+                        interativas e responsivas. Embora o "XML" esteja no nome, AJAX pode usar outros <br>
+                        formatos de dados, como JSON ou HTML, além do XML.
+                    </p>
+                    <p class="alinhar">
+                        A principal ideia por trás do AJAX é enviar e receber dados do servidor de <br>
+                        forma assíncrona, o que significa que a página da web pode continuar a ser <br>
+                        utilizada enquanto os dados estão sendo processados. Isso é feito através de <br>
+                        requisições HTTP que são realizadas em segundo plano. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="topico2">
+            <div class="title">
+                <h2>
+                    Requisições HTTP Assíncronas com 'fetch'
+                </h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    O método fetch é uma API moderna e mais simples para fazer requisições assíncronas <br>
+                    em comparação com XMLHttpRequest. Ele retorna uma promessa que resolve em um objeto <br>
+                    Response que pode ser manipulado para obter os dados retornados pelo servidor.
+                </p>
+                <p class="alinhar">
+                    Aqui está um exemplo básico de como usar o fetch para fazer uma requisição GET:
+                </p>
+                <div class="example-box">
+                    <pre id="code-example1">
+&lt;!DOCTYPE html>
+&lt;html lang="pt-BR">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;title>Exemplo AJAX com Fetch&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1>Dados de um Usuário&lt;/h1>
+    &lt;button id="carregar-dados">Carregar Dados&lt;/button>
+    &lt;div id="dados-usuario">&lt;/div>
+
+    &lt;script>
+        document.getElementById('carregar-dados').addEventListener('click', function() {
+            fetch('https://jsonplaceholder.typicode.com/users/1')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro na requisição');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const dadosDiv = document.getElementById('dados-usuario');
+                    dadosDiv.innerHTML = `&lt;p>Nome: ${data.name}&lt;/p>
+                                          &lt;p>Email: ${data.email}&lt;/p>`;
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                });
+        });
+    &lt;/script>
+&lt;/body>
+&lt;/html>
+                    </pre>
+                    <button onclick="copyCode1()" class="copy-button">Copiar</button>
+                </div>
+            </div>
+            <div class="sobre">
+                <h3>Explicação:</h3>
+                <p class="alinhar">
+                    <ul>
+                        <li>O exemplo acima cria uma interface simples com um botão. Quando o botão é <br>
+                            clicado, a função JavaScript faz uma requisição GET para a URL especificada <br>
+                            (neste caso, uma API fictícia que retorna os dados de um usuário).</li>
+                        <li>A função fetch faz a requisição e retorna uma promessa. Se a requisição for <br>
+                            bem-sucedida, os dados são convertidos para JSON usando response.json().</li>
+                        <li>Esses dados JSON são então usados para atualizar o conteúdo da página sem <br>
+                            recarregá-la.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="topico3">
+            <div class="title">
+                <h2>Requisições HTTP Assíncronas com 'XMLHttpRequest'</h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">Antes do fetch, a maneira mais comum de fazer requisições AJAX era <br>
+                    com XMLHttpRequest. Embora seja mais verboso e complexo, ainda é amplamente utilizado <br>
+                    e compreendido.
+                </p>
+                <p class="alinhar">
+                    Aqui está um exemplo básico de como usar XMLHttpRequest para fazer uma requisição GET:
+                </p>
+                <div class="example-box">
+                    <pre id="code-example2">
+&lt;DOCTYPE html>
+&lt;tml lang="pt-BR">
+&lt;ead>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;title>Exemplo AJAX com XMLHttpRequest&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1>Dados de um Usuário&lt;/h1>
+    &lt;button id="carregar-dados">Carregar Dados&lt;/button>
+    &lt;div id="dados-usuario">&lt;/div>
+
+    &lt;script>
+        document.getElementById('carregar-dados').addEventListener('click', function() {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/users/1', true);
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText);
+                    const dadosDiv = document.getElementById('dados-usuario');
+                    dadosDiv.innerHTML = `&lt;p>Nome: ${data.name}&lt;/p>
+                                          &lt;p>Email: ${data.email}&lt;/p>`;
+                } else if (xhr.readyState === 4 && xhr.status !== 200) {
+                    console.error('Erro na requisição');
+                }
+            };
+
+            xhr.send();
+        });
+    &lt;/script>
+&lt;/body>
+&lt;/html>
+                    </pre>
+                    <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                </div>
+            </div>
+            <div class="sobre">
+                <div class="title">
+                    <h3>Explicação:</h3>
+                </div>
+                <p class="alinhar">
+                    <ul>
+                        <li>XMLHttpRequest é um objeto que permite a realização de requisições HTTP. O <br>
+                            método open configura a requisição, especificando o tipo de requisição (GET) <br>
+                            e a URL.</li>
+                        <li>A propriedade onreadystatechange é um evento que é chamado sempre que o estado <br>
+                            da requisição muda. O estado é verificado por xhr.readyState, onde 4 significa <br>
+                            que a operação está completa.</li>
+                        <li>Se a requisição for bem-sucedida (status 200), os dados são processados e a <br>
+                            página é atualizada com as informações do usuário.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="topico4">
+            <div class="title">
+                <h2>Comparação entre 'fetch' e 'XMLHttpRequest'</h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    <ul>
+                        <li>Simplicidade: fetch é muito mais simples e menos verboso, tornando o código <br>
+                            mais legível e fácil de manter.</li>
+                        <li>Suporte a Promises: fetch usa Promises, o que facilita o manuseio de <br>
+                            requisições assíncronas e erros. XMLHttpRequest requer callbacks, o que <br>
+                            pode levar a um código mais complexo.</li>
+                        <li>Mais Moderno: fetch é a API recomendada para novos projetos, enquanto <br>
+                            XMLHttpRequest ainda é suportado para compatibilidade com navegadores mais <br>
+                            antigos.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="topico5">
+            <div class="title">
+                <h2 class="alinhar">
+                    Conclusão
+                </h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    AJAX é uma técnica poderosa que permite melhorar a interatividade das páginas web, <br>
+                    fazendo com que as requisições ao servidor sejam feitas em segundo plano. Tanto <br>
+                    'fetch' quanto 'XMLHttpRequest' permitem a realização de requisições assíncronas, mas <br>
+                    'fetch' é geralmente preferido devido à sua simplicidade e ao suporte a Promises. <br>
+                </p>
+            </div>
+        </div>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+            <a href="index-JAVA-GESTÃO.html"><button class="button-convite">Mais!</button></a>
+         </div>
+     </div>
+    </div>
+    
+
+<footer>
+    <div class="logo">
+        <img src="images/logo.png">
+        
+    </div>
+    <div class="text-final">
+        <p>Direitos Reservados a Hyperium @ 2024 <br>
+            Criado por Paulo Vinicius 4º Ti <br>
+            Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+             Carlos Henrique.
+        </p>
+    </div>
+</footer>
+
+<!-- Botão de Voltar para o Topo -->
+<button class="scroll-top" onclick="scrollToTop()">
+    <i class='bx-up-arrow'>
+        <img src="images/seta-cima.png" alt="">
+    </i>
+</button>
+
+<script src="java/script-JAVA-AJAX.js"></script>
+<script src="java/script.js"></script>
+</body>

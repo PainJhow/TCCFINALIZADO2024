@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Recursos Modernos - Hyperium</title>
+
+    <!-- Linkar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-ES6.css">
+
+</head>
+<body>
+
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Es6</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina" id="inicio">
+        <div class="topico1">
+            <div class="title">
+                <h1>ES6 e Recursos Modernos</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    ES6, ou ECMAScript 2015, trouxe melhorias significativas para o JavaScript. Recursos <br>
+                    como 'const' e 'let' aprimoram a declaração de variáveis, enquanto arrow functions <br>
+                    oferecem uma sintaxe mais concisa. Destructuring facilita a extração de valores, e <br>
+                    Promises melhoram a gestão de operações assíncronas, tornando o desenvolvimento mais <br>
+                    eficiente e organizado.
+                </p>
+            </div>
+        </div>
+        <div class="topico2">
+            <div class="title">
+                <h2>Const e Let</h2>
+            </div>
+            <div class="sobre">
+                    <p class="alinhar">
+                        Em ES6, const e let foram introduzidos como novas formas de declarar variáveis. <br>
+                        Ambos têm escopo de bloco, o que significa que estão disponíveis apenas dentro <br>
+                        do bloco onde foram definidos, diferentemente do var, que tem escopo de função. <br>
+                    </p>
+                    <ul>
+                        <li>Const</li>
+                        <p>
+                            Utilizado para declarar variáveis que não podem ser reatribuídas após a inicialização.
+                        </p>
+                        <div class="example-box">
+                            <pre id="code-example1">
+const pi = 3.14159;
+console.log(pi); // 3.14159
+
+// Tentar reatribuir uma constante resultará em um erro
+// pi = 3.14; // Uncaught TypeError: Assignment to constant variable.
+                            </pre>
+                            <button onclick="copyCode1()" class="copy-button">Copiar</button>
+                        </div>
+                        <li>Let</li>
+                        <p>
+                            Utilizado para variáveis que podem ser reatribuídas, mas que precisam de escopo de bloco.
+                        </p>
+                        <div class="example-box">
+                            <pre id="code-example2">
+let count = 0;
+count++;
+console.log(count); // 1
+                            </pre>
+                            <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                        </div>
+                    </ul>
+            </div>
+        </div>
+        <div class="topico3">
+            <div class="title">
+                <h2>Arrow Functions</h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Arrow functions são uma forma mais concisa de escrever funções em JavaScript. Além <br>
+                    disso, elas não têm o próprio contexto 'this', o que pode ser útil ao trabalhar com <br>
+                    métodos de classe ou callbacks.
+                </p>
+                <ul>
+                    <li>Sintaxe Concisa:</li>
+                    <div class="example-box">
+                        <pre id="code-example3">
+// Função tradicional
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow function equivalente
+const add = (a, b) => a + b;
+
+console.log(add(2, 3)); // 5
+                        </pre>
+                        <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                    </div>
+                    <li>Uso de Arrow Function em Callbacks:</li>
+                    <div class="example-box">
+                        <pre id="code-example4">
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map(num => num * num);
+console.log(squares); // [1, 4, 9, 16, 25]
+                        </pre>
+                        <button onclick="copyCode4()" class="copy-button">Copiar</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="topico4">
+            <div class="title">
+                <h2>Destructuring</h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">Destructuring é uma maneira de extrair valores de arrays ou objetos <br>
+                    em variáveis distintas de forma mais simples e legível.
+                </p>
+                <ul>
+                    <li>Destructuring em Arrays:</li>
+                    <div class="example-box">
+                        <pre id="code-example5">
+const colors = ['red', 'green', 'blue'];
+const [firstColor, secondColor] = colors;
+
+console.log(firstColor); // 'red'
+console.log(secondColor); // 'green'
+                        </pre>
+                        <button onclick="copyCode5()" class="copy-button">Copiar</button>
+                    </div>
+                    <li>Destructuring em Objetos:</li>
+                    <div class="example-box">
+                        <pre id="code-example6">
+const person = {
+name: 'John',
+age: 30,
+city: 'New York'
+};
+                            
+const { name, age } = person;
+console.log(name); // 'John'
+console.log(age);  // 30
+                        </pre>
+                        <button onclick="copyCode6()" class="copy-button">Copiar</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="topico5">
+            <div class="title">
+                <h2>Promises</h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    As Promises são usadas para lidar com operações assíncronas em JavaScript. Elas <br>
+                    representam um valor que pode estar disponível agora, no futuro ou nunca.
+                </p>
+                <ul>
+                    <li>Criando e Usando uma Promise:</li>
+                    <div class="example-box">
+                        <pre id="code-example7">
+const fetchData = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const data = { id: 1, name: 'Sample Data' };
+            resolve(data);
+        }, 2000);
+    });
+};
+
+fetchData()
+    .then(data => {
+        console.log(data); // { id: 1, name: 'Sample Data' }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+
+                        </pre>
+                        <button onclick="copyCode7()" class="copy-button">Copiar</button>
+                    </div>
+                    <li>Usando Promises com async/await:</li>
+                    <div class="example-box">
+                        <pre id="code-example8">
+const fetchData = async () => {
+    try {
+        const data = await fetchData();
+        console.log(data); // { id: 1, name: 'Sample Data' }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+};
+
+fetchData();
+                        </pre>
+                        <button onclick="copyCode8()" class="copy-button">Copiar</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="topico6">
+            <div class="sobre">
+                <p class="alinhar">
+                    Com esses recursos do ES6, seu site está preparado para aproveitar o que há de mais <br>
+                    moderno em JavaScript. Essas ferramentas não só tornam o código mais limpo e <br>
+                    eficiente, mas também facilitam a manutenção e expansão futura do projeto. Explore <br>
+                    essas funcionalidades para criar aplicações web robustas e dinâmicas, mantendo-se <br>
+                    alinhado às melhores práticas do desenvolvimento atual. 
+                </p>
+            </div>
+        </div>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+         </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+    
+    <script src="java/script-JAVA-ES6.js"></script>
+    <script src="java/script.js"></script>
+    </body>

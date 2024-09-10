@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Arrays e Objetos - Hyperium</title>
+
+    <!-- Linkar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-arrays.css">
+
+</head>
+<body>
+
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Arrays</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="title">
+                <h1>Trabalhando com Arrays e Objetos em JavaScript</h1>
+            </div>
+            
+        </div>
+        <div class="topico2">
+            <div class="sobretitle">
+                <h2>Arrays</h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Arrays são estruturas de dados fundamentais em JavaScript que armazenam uma coleção <br>
+                    de elementos. Aqui estão alguns dos métodos mais comuns que você pode usar para <br>
+                    manipular arrays:
+                </p>
+            </div>
+        </div>
+            <div class="sobre">
+                <ul>
+                    <li>'push( )'</li>
+                    <p>
+                        O método 'push()' é usado para adicionar um ou mais elementos ao final de um <br>
+                        array. Ele modifica o array original e retorna o novo comprimento do array.
+                    </p>
+                    <p>
+                        exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example1">
+let array = [1, 2, 3];
+array.push(4);
+console.log(array); // Output: [1, 2, 3, 4]
+
+                        </pre>
+                        <button onclick="copyCode1()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste exemplo, o número '4' é adicionado ao final do array 'array', aumentando <br>
+                        seu comprimento para 4.
+                    </p>
+                    <li>'pop( )'</li>
+                    <p>
+                        O método 'pop()' remove o último elemento de um array e retorna esse elemento. <br>
+                        Ele também modifica o array original.
+                    </p>
+                    <p>
+                        exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example2">
+let array = [1, 2, 3];
+let removedElement = array.pop();
+console.log(removedElement); // Output: 3
+console.log(array); // Output: [1, 2]
+                        </pre>
+                        <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste caso, o número '3' é removido do final do array 'array', e é atribuído à <br>
+                        variável 'removedElement'.
+                    </p>
+                    <li>'shift( )'</li>
+                    <p>
+                        O método 'shift()' remove o primeiro elemento de um array e retorna esse elemento. <br>
+                        Ele também modifica o array original, deslocando os índices dos elementos restantes.
+                    </p>
+                    <p>
+                        exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example3">
+let array = [1, 2, 3];
+let removedElement = array.shift();
+console.log(removedElement); // Output: 1
+console.log(array); // Output: [2, 3]
+                        </pre>
+                        <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste exemplo, o número '1' é removido do início do array 'array', e é atribuído <br>
+                        à variável 'removedElement'.
+                    </p>
+                    <li>'unshift( )'</li>
+                    <p>
+                        O método 'unshift()' é usado para adicionar um ou mais elementos ao início de um <br>
+                        array. Ele modifica o array original e retorna o novo comprimento do array.
+                    </p>
+                    <p>
+                        exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example4">
+let array = [2, 3];
+array.unshift(1);
+console.log(array); // Output: [1, 2, 3]
+                        </pre>
+                        <button onclick="copyCode4()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste caso, o número '1' é adicionado ao início do array 'array', aumentando seu <br>
+                        comprimento para 3.
+                    </p>
+                    <li>'map( )'</li>
+                    <p>
+                        O método 'map()' cria um novo array com os resultados da chamada de uma função <br>
+                        para cada elemento do array. Ele não modifica
+                        o array original.
+                    </p>
+                    <p>
+                        exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example5">
+let array = [1, 2, 3];
+let doubledArray = array.map(num => num * 2);
+console.log(doubledArray); // Output: [2, 4, 6]
+                        </pre>
+                        <button onclick="copyCode5()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste exemplo, a função de mapeamento dobra cada elemento do array original <br>
+                        'array', criando um novo array 'doubledArray' com os resultados.
+                    </p>
+                    <li>'filter( )'</li>
+                    <p>
+                        O método 'filter()' cria um novo array com todos os elementos que passam no <br>
+                        teste implementado pela função fornecida. Ele não modifica o array original.
+                    </p>
+                    <p>
+                        exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example6">
+let array = [1, 2, 3, 4, 5];
+let filteredArray = array.filter(num => num % 2 === 0);
+console.log(filteredArray); // Output: [2, 4]
+                        </pre>
+                        <button onclick="copyCode6()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste exemplo, a função de filtro retorna 'true' apenas para os números pares, <br>
+                        resultando em um novo array 'filteredArray' contendo apenas os números pares do <br>
+                        array original 'array'.
+                    </p>
+                </ul>
+            </div>
+        
+        <div class="topico3">
+            <div class="title">
+                <h2>Objetos</h2>
+            </div>
+            <div class="sobre">
+                <ul>
+                    <li>Adicionando Propriedades</li>
+                    <p>
+                        Em JavaScript, você pode adicionar novas propriedades a um objeto simplesmente <br>
+                        atribuindo um valor a uma nova chave.
+                    </p>
+                    <p>
+                        exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example7">
+let person = { name: 'John', age: 30 };
+person.job = 'Developer';
+console.log(person); // Output: { name: 'John', age: 30, job: 'Developer' }
+                        </pre>
+                        <button onclick="copyCode7()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste exemplo, adicionamos uma nova propriedade 'job' ao objeto 'person', <br>
+                        atribuindo-lhe o valor ''Developer''.
+                    </p>
+                    <li>Acessando Propriedades</li>
+                    <p>
+                        Você pode acessar as propriedades de um objeto usando a notação de ponto <br>
+                        (objeto.propriedade) ou a notação de colchetes (objeto['propriedade']).
+                    </p>
+                    <p>
+                        exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example8">
+console.log(person.name); // Output: John
+                        </pre>
+                        <button onclick="copyCode8()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste caso, estamos acessando a propriedade 'name' do objeto 'person'.
+                    </p>
+                    <li>Removendo Propriedades</li>
+                    <p>
+                        Você pode remover propriedades de um objeto usando o operador 'delete'.
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example9">
+delete person.age;
+console.log(person); // Output: { name: 'John', job: 'Developer' }
+                        </pre>
+                        <button onclick="copyCode9()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste exemplo, removemos a propriedade 'age' do objeto 'person'.
+                    </p>
+                </ul>
+            </div>
+        </div>
+        <div class="topico4">
+            <div class="sobre">
+                <p class="alinhar">
+                    Espero que esses exemplos e explicações detalhadas tenham sido úteis para entender <br>
+                    como trabalhar com arrays e objetos em JavaScript!
+                </p>
+            </div>
+        </div>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+            <a href="index-JAVA-AJAX.html"><button class="button-convite">Mais!</button></a>
+         </div>
+     </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+
+    <script src="java/script-JAVA-arrays.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Funções JavaScript - Hyperium</title>
+
+    <!-- Linkar - CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-funcoes.css">
+
+</head>
+<body>
+    
+     <!-- Divisão - Topo do Site - Bem Vindo//-->
+     <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Funções</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="oqe">
+                <h1>Funções em Programação: Uma Introdução Abrangente</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    As funções são blocos de código reutilizáveis que realizam uma tarefa específica <br>
+                    dentro de um programa. Elas desempenham um papel crucial na organização e <br>
+                    modularização do código, tornando-o mais legível, eficiente e fácil de manter. Vamos <br>
+                    explorar mais sobre funções, incluindo como declará-las, seus parâmetros e argumentos, <br>
+                    e como funcionam os retornos.
+                </p>
+            </div>
+        </div>
+
+        <div class="topico2">
+            <div class="title">
+                <h1>1. Declaração de Funções</h1>
+            </div>
+            <div class="sobre">
+                <p>
+                    Em muitas linguagens de programação, incluindo Python, JavaScript e C++, a sintaxe <br>
+                    básica para declarar uma função é a seguinte:
+
+                </p>
+                <div class="example-box">
+                    <pre id="code-example1">
+    function nomeDaFuncao(parametros) {
+         "Corpo da função"
+         "Código a ser executado"
+        return resultado;
+    }
+                    </pre>
+                    <button onclick="copyCode1()" class="copy-button">Copiar</button>
+                </div>
+                <p>
+                    Por exemplo, uma função simples em JavaScript que adiciona dois números e retorna o <br>
+                    resultado pode ser declarada da seguinte forma:
+                </p>
+                <div class="example-box">
+                    <pre id="code-example2">
+    function soma(a, b) {
+        return a + b;
+    }
+                    </pre>
+                    <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                </div>
+            </div>
+        </div>
+        <div class="topico3">
+            <div class="title">
+                <h1>2. Parâmetros e Argumentos de Função</h1>
+            </div>
+            <div class="sobre">
+                <p >
+                    Os parâmetros são variáveis ​​declaradas na definição da função e servem como <br>
+                    marcadores de posição para os valores que serão passados para a função quando ela <br>
+                    for chamada. Os argumentos são os valores reais passados para a função durante a <br>
+                    chamada.
+                </p>
+                <p>
+                    Por exemplo, na função 'soma(a, b)', 'a' e 'b' são parâmetros. Ao chamar essa função e <br>
+                    passar valores específicos para 'a' e 'b', esses valores são os argumentos:
+                </p>
+                <div class="example-box">
+                    <pre id="code-example3">
+    var resultado = soma(3, 5);
+                    </pre>
+                    <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                </div>
+                <p>
+                    Neste caso, '3' e '5' são os argumentos passados para os parâmetros 'a' e 'b', respectivamente.
+                </p>
+            </div>
+        </div>
+        <div class="topico4">
+            <div class="title">
+                <h1>3. Retorno de Funções</h1>
+            </div>
+            <div class="sobre">
+                <p>
+                    As funções podem retornar valores utilizando a palavra-chave 'return'. O valor <br>
+                    retornado pode ser qualquer tipo de dado, como números, strings, listas, ou até <br>
+                    mesmo objetos mais complexos.
+                </p>
+                <p>
+                    Por exemplo, uma função em JavaScript que verifica se um número é par pode ser <br>
+                    definida da seguinte forma:
+                </p>
+                <div class="example-box">
+                    <pre id="code-example4">
+    function ehPar(numero) {
+        if (numero % 2 === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+                    </pre>
+                    <button onclick="copyCode4()" class="copy-button">Copiar</button>
+                </div>
+                <p>
+                    Quando chamamos essa função e passamos um número como argumento, ela retorna true <br>
+                    se o número for par e false caso contrário:
+                </p>
+                <div class="example-box">
+                    <pre id="code-example5">
+    var resultado = ehPar(4);  ""Retorna true"
+                    </pre>
+                    <button onclick="copyCode5()" class="copy-button">Copiar</button>
+                </div>
+                <div class="title">
+                    <h1 class="alinhar">Exemplos Adicionais</h1>
+                </div>
+                <div class="example-box">
+                    <pre id="code-example6">
+    function calcularMedia(listaNumeros) {
+        var total = listaNumeros.reduce((acc, curr) => acc + curr, 0);
+        var media = total / listaNumeros.length;
+        return media;
+    }
+    
+    var notas = [7, 8, 9, 6, 8];
+    var mediaNotas = calcularMedia(notas);
+                    </pre>
+                    <button onclick="copyCode6()" class="copy-button">Copiar</button>
+                </div>
+                <div class="div"></div>
+                <div class="example-box">
+                    <pre id="code-example7">
+    function saudacao(nome) {
+        return "Olá, " + nome + "!";
+    }
+    
+    var mensagem = saudacao("Ana"); " Retorna 'Olá, Ana!'"
+                    </pre>
+                    <button onclick="copyCode7()" class="copy-button">Copiar</button>
+                </div>
+                <p class="alinhar">
+                    Em resumo, as funções são blocos de código encapsulados que realizam tarefas <br>
+                    específicas e podem ser chamadas repetidamente em um programa. Elas ajudam a <br>
+                    tornar o código mais modular, facilitando a manutenção e promovendo a reutilização.
+                </p>
+            </div>
+        </div>
+
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+            <a href="index-JAVA-manipulacao.html"><button class="button-convite">Mais!</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <script src="java/script-JAVA-funcoes.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

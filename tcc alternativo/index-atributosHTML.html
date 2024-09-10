@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Hyperium - Atributos HTML</title>
+
+    <!-- Linkar - CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-atributosHTML.css">
+
+</head>
+<body>
+       
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Atributos</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="oqe">
+                <h1>Oque são Atributos do HTML ?</h1>
+            </div>
+            <div class="sobre">
+                <p>Atributos em HTML são características adicionais aplicadas <br>
+                    a elementos HTML para controlar seu comportamento, aparência <br>
+                    e funcionalidade em uma página web. Esses atributos fornecem <br>
+                    informações extras, permitindo desde a edição de conteúdo com <br>
+                    contenteditable até a definição de comportamentos específicos, <br>
+                    como arrastar elementos com draggable, garantindo assim maior <br>
+                    interatividade, acessibilidade e personalização na construção de <br>
+                    uma página web.</p>
+            </div>
+        </div>
+        <div class="topico2">
+            <div class="funcionamento">
+                <h1>Como Funciona os Atributos ?</h1>
+            </div>
+            <div class="sobre">
+                <p>Os atributos em HTML são informações adicionais que podem ser incluídas <br>
+                    nos elementos para fornecer detalhes específicos sobre como esses elementos <br>
+                    devem se comportar ou ser exibidos. Cada atributo tem um propósito único e <br>
+                    pode ser usado para controlar diversos aspectos, desde a aparência visual <br>
+                    até o comportamento interativo de um elemento na página web.</p>
+                <p>Por exemplo, o atributo "href" em um elemento "a" é usado para especificar o <br>
+                    destino de um link, enquanto o atributo "src" em um elemento "img" define o <br>
+                    caminho da imagem a ser exibida na página.</p>
+                <p>Esses atributos são escritos dentro das tags dos elementos HTML e podem variar <br>
+                    dependendo do tipo de elemento. Eles desempenham um papel importante na estruturação <br>
+                    e funcionalidade das páginas da web, permitindo aos desenvolvedores controlar e <br>
+                    personalizar como o conteúdo é apresentado e interage com os usuários.</p>
+            </div>
+        </div>
+        <div class="topico3">
+            <div class="atributos-exemplo">
+                <h1>Alguns Atributos Exemplificados</h1>
+            </div>
+            <div class="sobre">
+                <ul>
+                    <li class="code-exemplo">Contenteditable</li>
+                    <p>Esse atributo permite que o conteúdo de um elemento HTML seja editável diretamente <br>
+                        na página, como se fosse um editor de texto simples. Ao adicionar <br>
+                        contenteditable="true" a um elemento, como &lt;div&gt; ou &lt;p&gt;, o navegador permite que o usuário <br>
+                        edite o texto dentro desse elemento. Isso pode ser útil para criar áreas de texto <br>
+                        editáveis em aplicações web ou até mesmo para permitir a edição de conteúdo diretamente na página.</p>
+                    <div class="example-box">
+                        <pre id="code-example">
+                            &lt;div contenteditable="true"&gt;
+                                {texto}
+                                &lt;/div&gt;
+                        </pre>
+                        <button onclick="copyCode()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">SpellCheck</li>
+                    <p>Este atributo é aplicado a elementos como campos de texto ou áreas de texto e controla se o navegador deve verificar <br>
+                        a ortografia do texto digitado. Adicionar spellcheck="true" habilitará a verificação ortográfica automática para o texto <br>
+                        inserido nesses elementos.</p>
+                    <div class="example-box">
+                        <pre id="code-example2">
+                            &lt;textarea spellcheck="true"&gt;&lt;/textarea&gt;
+                        </pre>
+                        <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">ContextMenu</li>
+                    <p>Ao definir esse atributo em um elemento, como &lt;div&gt; ou &lt;p&gt;, você pode associar um menu de contexto <br> 
+                        personalizado que será exibido ao clicar com o botão direito do mouse nesse elemento. Isso pode ser <br>
+                        útil para fornecer opções específicas de contexto para o usuário.</p>
+                    <div class="example-box">
+                        <pre id="code-example3">
+                            &lt;div contextmenu="menuID"&gt;Clique com o botão direito para ver o menu.&lt;/div&gt;
+                            &lt;menu type="context" id="menuID"&gt;
+                            &lt;menuitem label="Opção 1"&gt;&lt;/menuitem&gt;
+                            &lt;menuitem label="Opção 2"&gt;&lt;/menuitem&gt;
+                            &lt;/menu&gt;
+                        </pre>
+                        <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">Translate</li>
+                    <p>Esse atributo controla se o conteúdo de um elemento deve ser traduzido automaticamente pelo <br>
+                        navegador. Define-se como translate="yes" para permitir a tradução automática ou translate="no" <br>
+                        para impedir a tradução.</p>
+                    <div class="example-box">
+                        <pre id="code-example4">
+                            &lt;p translate="no"&gt;Este texto não deve ser traduzido.&lt;/p&gt;
+                        </pre>
+                        <button onclick="copyCode4()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">Draggable</li>
+                    <p>Quando aplicado a elementos HTML, como &lt;div&gt; ou &lt;img&gt;, o atributo draggable permite que eles sejam <br>
+                        arrastados e soltos em outras áreas da página ou até mesmo em aplicativos externos.</p>
+                    <div class="example-box">
+                        <pre id="code-example5">
+                            &lt;img src="imagem.png" draggable="true" alt="Imagem arrastável"&gt;
+                        </pre>
+                        <button onclick="copyCode5()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">SandBox</li>
+                    <p>Esse atributo é usado principalmente em elementos &lt;iframe&gt; para restringir as ações permitidas dentro <br>
+                        do iframe, criando um ambiente "sandbox". Pode ser útil para executar conteúdo de terceiros com certas <br>
+                        restrições de segurança.</p>
+                    <div class="example-box">
+                        <pre id="code-example6">
+                            &lt;iframe src="paginaexterna.com" sandbox="allow-scripts"&gt;&lt;/iframe&gt;
+                        </pre>
+                        <button onclick="copyCode6()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">Hidden</li>
+                    <p>Simplesmente oculta um elemento da página quando definido como "hidden". Isso pode ser útil para ocultar <br>
+                        temporariamente um elemento sem removê-lo do DOM.</p>
+                    <div class="example-box">
+                        <pre id="code-example7">
+                            &lt;p hidden&gt;Este parágrafo está oculto.&lt;/p&gt;
+                        </pre>
+                        <button onclick="copyCode7()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">Scoped</li>
+                    <p> Usado em elementos &lt;style&gt;, o atributo "scoped" limita o alcance das regras CSS apenas ao elemento <br>
+                        pai. Isso evita que as regras de estilo se apliquem a outros elementos na página.</p>
+                    <div class="example-box">
+                        <pre id="code-example8">
+                            &lt;style scoped&gt;
+                                p {
+                                    color: red;
+                                }
+                            &lt;/style&gt;
+                            &lt;p&gt;Este texto será vermelho devido ao escopo do estilo.&lt;/p&gt;
+                        </pre>
+                        <button onclick="copyCode8()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">Nonce</li>
+                    <p>É utilizado em &lt;script&gt; e &lt;style&gt; para garantir que apenas scripts e estilos autorizados sejam <br>
+                        executados. O valor do atributo deve ser um número aleatório gerado pelo servidor para prevenir ataques de injeção <br>
+                        de código.</p>
+                    <div class="example-box">
+                        <pre id="code-example9">
+                            &lt;script src="script.js" nonce="nonce-gerado-pelo-servidor"&gt;&lt;/script&gt;
+                        </pre>
+                        <button onclick="copyCode9()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">IsMap</li>
+                    <p>Este atributo é usado em &lt;img&gt; para criar imagens sensíveis a mapas. Ao definir "ismap", é possível <br>
+                        associar coordenadas a um mapa de imagem para criar áreas clicáveis na imagem.</p>
+                    <div class="example-box">
+                        <pre id="code-example10">
+                            &lt;img src="imagem.png" ismap usemap="#mapa"&gt;
+                              &lt;map name="mapa">
+                               &lt;area shape="rect" coords="0,0,50,50" href="pagina1.html"&gt;
+                               &lt;area shape="circle" coords="100,100,50" href="pagina2.html"&gt;
+                              &lt;/map&gt;
+                        </pre>
+                        <button onclick="copyCode10()" class="copy-button">Copiar</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="topico4">
+            <p>Explorar os atributos do HTML foi uma jornada reveladora. Ao compreender sua aplicação, pude personalizar e controlar <br>
+                elementos na página, desde a edição de conteúdo com "contenteditable" até a definição de comportamentos específicos com <br>
+                "draggable". Esses atributos não apenas aprimoraram a estética, mas também garantiram uma interação mais dinâmica, enriquecendo a <br>
+                experiência do usuário neste site.</p>
+        </div>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+
+    <script src="java/script-atributosHTML.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

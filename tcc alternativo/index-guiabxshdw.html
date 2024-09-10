@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Hyperium - Box Shadow Guia</title>
+
+    <!-- linkar CSS -->
+    <link rel="stylesheet" href="css/style-guiabxshdw.css">
+    
+</head>
+<body>
+    
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Box Shadow</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="oqe">
+                <h2>O que é o Box Shadow?</h2>
+            </div>
+            <div class="sobre">
+                <p>O Box Shadow é uma propriedade do CSS usada para adicionar 
+                    sombras <br>aos elementos HTML, conferindo profundidade e destaque 
+                    visual. É uma ferramenta <br> valiosa para designers e desenvolvedores, 
+                    permitindo a criação de efeitos visuais sofisticados em interfaces da web.</p>
+            </div>
+        </div>
+        <!-- DIVISÃO -->
+        <h1 class="div">Funcionamento do Box Shadow</h1>
+        <!-- DIVISÃO -->
+        <div class="topico2">
+            <div class="propri">
+                <h2>Propriedades Principais</h2>
+            </div>
+            <div class="sobre">
+                <ul>
+                    <li class="primeiro">Offset X e Y</li>
+                    <p>Esses valores determinam o deslocamento horizontal <br>
+                        e vertical da sombra em relação ao elemento. Um valor positivo de offset-x move a <br>
+                        sombra para a direita, enquanto um valor negativo a move para a esquerda. Para offset-y, <br>
+                        um valor positivo move a sombra para baixo e um valor negativo a move para cima.</p>
+                    <li class="segundo">Blur Radius</li>
+                    <p>Esta propriedade define o quanto a sombra se difunde, criando um efeito de desfoque. <br> 
+                        Quanto maior o valor do raio, mais suave será a transição entre a sombra e o fundo.</p>
+                    <li class="terceiro">Spread Radius</li>
+                    <p>Controla a expansão ou contração da sombra a partir do elemento. Valores positivos expandem <br>
+                        a sombra e valores negativos a contraem. Isso permite ajustar a extensão da sombra em relação <br>
+                        às bordas do elemento.</p>
+                    <li class="quarto">Cor da Sombra</li>
+                    <p>Define a cor da sombra que será aplicada ao elemento. Pode ser uma cor sólida ou incluir transparência usando valores RGBA.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="topico3">
+            <div class="exemplo1">
+                <h1>Sintaxe Básica</h1>
+            </div>
+            <div class="example-box">
+                <pre id="code-example1" class="exemplo1code">
+                box-shadow: offset-x offset-y blur-radius spread-radius color;
+                </pre>
+            </div>
+        </div>
+        <div class="topico4">
+            <div class="exemplo2">
+                <h1>Exemplo Prático</h1>
+            </div>
+            <div class="example-box">
+                <pre id="code-example" class="exemplo1code">
+                    .elemento {
+                        width: 200px;
+                        height: 200px;
+                        background-color: #f0f0f0;
+                        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+                    }
+                </pre>
+                <button onclick="copyCode()" class="copy-button">Copiar</button>
+            </div>
+            <div class="sobre-exemplocd">
+                <p>Aqui, um elemento com a classe .elemento teria uma sombra deslocada <br> 
+                    em 5 pixels horizontalmente e 5 pixels verticalmente, com um raio de <br>
+                    desfoque de 10 pixels e uma cor de sombra preta com 50% de transparência.</p>
+            </div>
+        </div>
+        
+        <div class="topico5">
+            <div class="editores">
+                <h1>Editor de Box Shadow</h1>
+            </div>
+            <div class="sobre-convite">
+                <p>Quer elevar o visual do seu site com sombras personalizadas e efeitos visuais <br>
+                    surpreendentes? Apresentamos o nosso Box Shadow Editor, uma ferramenta inovadora <br>
+                    e intuitiva que permite a criação de sombras personalizadas para elementos HTML <br>
+                    de forma rápida e fácil.</p>
+            </div>
+            <div class="titulo-pqusa">
+                <h2>Use o Nosso Editor Box Shadow</h2>
+            </div>
+            <div class="sobre">
+                <ul>
+                    <li class="primeiro">Simplicidade de Uso</li>
+                    <p>Com uma interface intuitiva, nosso editor simplifica o processo de criação de <br>
+                        sombras, permitindo ajustar valores de deslocamento, desfoque, expansão e cor <br>
+                        com apenas alguns cliques.</p>
+                    <li class="segundo">Visualização em Tempo Real</li>
+                    <p>Visualize instantaneamente como suas alterações afetam a aparência do elemento, <br>
+                        garantindo um controle total sobre o efeito de sombra desejado.</p>
+                    <li class="terceiro">Geração de Código Prático</li>
+                    <p>O editor gera automaticamente o código CSS correspondente ao efeito de sombra criado. <br>
+                        Basta copiar e colar o código gerado em seu projeto para implementar a sombra desejada.</p>
+                    <li class="quarto">Flexibilidade e Criatividade</li>
+                    <p>Experimente uma variedade de combinações de sombras para obter efeitos exclusivos. <br>
+                        Personalize sombras para botões, caixas, imagens e muito mais, dando um toque especial ao seu design.</p>
+                </ul>
+            </div>
+            <div class="sessao">
+                <div class="convite">
+                    <h2>Experimente Agora</h2>
+                    <p>Transforme seu design com sombras envolventes e elegantes! Experimente nosso Box Shadow Editor hoje <br>
+                    mesmo e adicione um toque de profundidade e estilo aos elementos do seu site.</p>
+                </div>
+            </div>
+            <div class="btn-convite">
+                <a href="index.html"><button class="button-convite">Home</button></a>
+                <a href="index-editorbxshdw.html"><button class="button-convite">Editor</button></a>
+            </div>
+        </div> 
+    </div> 
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+    
+    <script src="java/script-guiabxshdw.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

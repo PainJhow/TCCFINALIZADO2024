@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-glasseditor.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Hyperium - Glass Editor</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="content">
+            <div class="text">
+                <a href="index.html"><button class="home-btn">Home</button></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="glass-preview">
+        <div class="glass-preview-rectangle"></div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h1>Glass Editor</h1>
+            <div class="input-container">
+                <label for="blur">Blur :</label>
+                <input type="range" id="blur" min="0" max="30" value="10">
+            </div>
+            <div class="input-container">
+                <label for="transparency">Transparency :</label>
+                <input type="range" id="transparency" min="0" max="1" step="0.01" value="0.7">
+            </div>
+            <div class="input-container">
+                <label for="color">Color :</label>
+                <input type="color" id="color" value="#000">
+            </div>
+            <div class="input-container">
+                <label for="outline">Outline :</label>
+                <input type="range" id="outline" min="0" max="10" value="2">
+            </div>
+            <div class="input-container">
+                <label for="css-code">Gerador do Codigo CSS :</label>
+                <textarea id="css-code" readonly></textarea>
+            </div>
+            <button id="copy-button">Copiar Codigo</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <script src="java/script-glasseditor.js"></script>
+</body>
+
+</html>

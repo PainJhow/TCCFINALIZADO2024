@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Hyperium - Code Live</title>
+    <head>
+        <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins', sans-serif;
+            }
+            .btn-convite{
+                padding-top: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            
+            .button-convite{
+                cursor: pointer;
+                padding: 15px;
+                border: 1px solid #fff;
+                background: none;
+                color: #fff;
+                border-radius: 10px;
+                transition: 500ms linear;
+            
+            }
+            
+            
+            .button-convite:hover{
+                background-color: #000080;
+                transform: scale(1.1);
+            }
+            body{
+                background-color: #8B0000;
+                color: #fff;
+            }
+            .container{
+                width: 100%;
+                height: 95vh;
+                display: flex;
+                gap: 20px;
+                padding-bottom: 30px;
+            }
+            .left, .right{
+                flex-basis: 50%;
+                padding: 10px;
+            }
+            .left{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .left .box{
+                height: 25vh;
+            }
+            textarea{
+                width: 100%;
+                height: 100%;
+                background-color: #1f1f1f;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                outline: none;
+                font-size: 18px;
+            }
+            iframe{
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                border: none;
+                outline: none;
+            }
+            label i{
+                margin: 0 10px;
+            }
+            label{
+                display: flex;
+                align-items: center;
+                background-color: #000;
+                height: 30px;
+            }
+            .fa-solid, .fa-brands{
+                color: aqua;
+            }
+            .footer{
+                width: 100%;
+                height: 95px;
+                background-color: #8B0000;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+                justify-content: center;
+                box-shadow: 0px -10px 9px 3px rgba(0, 0, 0, 0.25);
+                z-index: 0;
+                -webkit-user-select: none;
+                user-select: none;
+                padding-top: 10px;
+            }
+            
+            .logo{
+                display: flex;
+                height: 120px;
+            
+            }
+            
+            .text-final{
+                color: #fff;
+                font-size: 17px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+        </div>
+        <div class="container">
+            
+            <div class="left">
+                <div class="box">
+                    <label for=""><i class="fa-brands fa-html5"></i> HTML</label>
+                    <textarea id="html-code" onkeyup="run()"></textarea>
+                </div>
+
+                <div class="box">
+                    <label for=""><i class="fa-brands fa-css3-alt"></i> CSS</label>
+                    <textarea id="css-code" onkeyup="run()"></textarea>
+                </div>
+
+                <div class="box">
+                    <label for=""><i class="fa-brands fa-js"></i> JavaScript</label>
+                    <textarea id="js-code" onkeyup="run()"></textarea>
+                </div>
+            </div>
+            <div class="right">
+                <label for=""><i class="fa-solid fa-play"></i> Código</label>
+                <iframe id="output"></iframe>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="logo">
+                <img src="images/logo.png">
+                
+            </div>
+            <div class="text-final">
+                <p>Direitos Reservados a Hyperium @ 2024 <br>
+                    Criado por Paulo Vinicius 4º Ti <br>
+                    Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                     Carlos Henrique.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            function run(){
+                let htmlCode = document.getElementById("html-code").value;
+                let cssCode = document.getElementById("css-code").value;
+                let jsCode = document.getElementById("js-code").value;
+                let outPut = document.getElementById("output");
+
+                outPut.contentDocument.body.innerHTML = htmlCode + "<style>" + cssCode + "</style>";
+                outPut.contentWindow.eval(jsCode);
+            }
+        </script>
+    </body>
+</html>
+

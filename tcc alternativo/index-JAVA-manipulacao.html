@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Manipulação DOM - Hyperium</title>
+
+    <!-- Linkar - CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-manipulacao.css">
+
+</head>
+<body>
+    
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Manipulação</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="oqe">
+                <h1>Introdução à Manipulação do DOM em JavaScript</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    O DOM (Document Object Model) é uma interface de programação para documentos HTML, <br>
+                    XML e SVG. Ele representa a estrutura do documento como um conjunto de objetos, <br>
+                    permitindo que os programadores manipulem sua estrutura, estilo e conteúdo <br>
+                    dinamicamente por meio de linguagens de script como JavaScript. A manipulação do DOM <br>
+                    é essencial para criar interações dinâmicas e atualizações em páginas da web. <br>
+                </p>
+            </div>
+        </div>
+        <div class="topico2">
+            <div class="title">
+                <h1>
+                    O que é Manipulação do DOM?
+                </h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    A manipulação do DOM refere-se ao processo de acessar, modificar e interagir com <br>
+                    elementos HTML em uma página da web. Isso inclui selecionar elementos, alterar seu <br>
+                    conteúdo, atributos, estilos e responder a eventos do usuário. <br>
+                </p>
+            </div>
+        </div>
+    
+     <div class="topico3">
+         <div class="title">
+             <h1>Principais aspectos da Manipulação do DOM</h1>
+         </div>
+         <div class="sobre">
+             <ol class="lista">
+                 <li class="underline">Selecionar elementos HTML:</li>
+                 <ul>
+                     <li>
+                         Métodos como 'getElementById', 'getElementsByClassName', 'getElementsByTagName' e <br>
+                         'querySelector' são usados para selecionar elementos com base em seus IDs, <br>
+                         classes, tags ou seletores CSS.
+                     </li>
+                     <li>
+                         Exemplo: 
+                     </li>
+                     <div class="example-box">
+                         <pre id="code-example1">
+            var elemento = document.getElementById('meuElemento');
+                         </pre>
+                         <button onclick="copyCode1()" class="copy-button">Copiar</button>
+                     </div>
+                 </ul>
+                 <li class="underline">Modificar conteúdo, atributos e estilos:</li>
+                 <ul>
+                     <li>
+                         Uma vez que os elementos são selecionados, você pode modificar seu conteúdo <br>
+                         usando propriedades como 'innerHTML', 'innerText', 'textContent', etc.
+                     </li>
+                     <li>
+                         Os atributos podem ser alterados usando métodos como 'setAttribute' e 'removeAttribute'.
+                     </li>
+                     <li>
+                         Os estilos podem ser modificados diretamente através da propriedade 'style'.
+                     </li>
+                     <li>
+                         Exemplo:
+                     </li>
+                     <div class="example-box">
+                         <pre id="code-example2">
+            var elemento = document.getElementById('meuElemento');
+            elemento.innerHTML = 'Novo conteúdo';
+            elemento.setAttribute('class', 'destaque');
+            elemento.style.color = 'red';
+                         </pre>
+                         <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                     </div>
+                 </ul>
+                 <li class="underline">Manipulação de eventos:</li>
+                 <ul>
+                     <li>
+                         Eventos como cliques, passagens do mouse, pressionamentos de tecla, etc., podem <br>
+                         ser manipulados atribuindo funções a elementos HTML usando 'addEventListener'.
+                     </li>
+                     <li>
+                         Exemplo:
+                     </li>
+                     <div class="example-box">
+                         <pre id="code-example3">
+            var botao = document.getElementById('meuBotao');
+            bota o.addEventListener('click', function() {
+                alert('O botão foi clicado!');
+            });                          
+                         </pre>
+                         <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                     </div>
+                 </ul>
+             </ol>
+         </div>
+     </div>
+     <div class="topico4">
+        <div class="sobre">
+            <p class="alinhar">
+                Esses são os principais aspectos da manipulação do DOM em JavaScript, permitindo aos <br>
+                desenvolvedores criar páginas da web interativas e dinâmicas.
+            </p>
+        </div>
+     </div>
+     <div class="btn-convite">
+        <a href="index.html"><button class="button-convite">Home</button></a>
+        <a href="index-JAVA-arrays.html"><button class="button-convite">Mais!</button></a>
+     </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+
+    <script src="java/script-JAVA-manipulacao.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

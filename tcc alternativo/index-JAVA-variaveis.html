@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Variaveis JavaScript - Hyperium</title>
+
+    <!-- Linkar - CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-variaveis.css">
+
+</head>
+<body>
+    
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Variaveis</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="oqe">
+                <h1>Variáveis e Tipos de Dados</h1>
+            </div>
+            <div class="title">
+                <h3>Declaração de Variáveis</h3>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    A declaração de variáveis é um conceito fundamental em programação, permitindo que <br>
+                    você armazene e manipule dados. Em muitas linguagens de programação, a declaração <br>
+                    de variáveis envolve escolher um nome descritivo e associar a variável a um tipo de <br>
+                    dado específico. Vamos considerar um exemplo em JavaScript:
+                </p>
+                <div class="example-box">
+                    <pre id="code-example1">
+ // Declaração de variáveis
+ let idade; // Declaração de uma variável chamada 'idade'
+ idade = 25; // Atribuição de valor à variável 'idade'
+ console.log(idade); // Saída: 25
+                    </pre>
+                    <button onclick="copyCode1()" class="copy-button">Copiar</button>
+                </div>
+            </div>
+            <p>
+                Neste exemplo, criamos uma variável chamada 'idade' e atribuímos o valor 25 a ela.
+            </p>
+        </div>
+        <div class="topico2">
+            <div class="title">
+                <h1>Tipo de Dados</h1>
+            </div>
+            <div class="sobre">
+                <p>
+                    <ul>
+                        <li class="dados">Números</li>
+                        <p>
+                            Em programação, os números podem ser inteiros ou decimais. Variáveis do tipo <br> 
+                            número são utilizadas para armazenar valores matemáticos. Exemplos:
+                        </p>
+                        <div class="example-box">
+                            <pre id="code-example2">
+let idade = 25;      // Número inteiro
+let altura = 1.75;   // Número decimal
+                            </pre>
+                            <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                        </div>
+                        <li class="dados">Strings</li>
+                        <p>
+                            Strings são sequências de caracteres, como texto. Elas são comumente usadas <br>
+                            para representar palavras, frases ou qualquer combinação de caracteres <br>
+                            alfanuméricos. Exemplos:
+                        </p>
+                        <div class="example-box">
+                            <pre id="code-example3">
+let nome = "Ana";        // String com um nome
+let saudacao = "Olá!";   // String com uma saudação 
+                            </pre>
+                            <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                        </div>
+                        <li class="dados">Booleanos</li>
+                        <p>
+                            Variáveis booleanas têm apenas dois valores possíveis: true ou false. Elas <br>
+                            são frequentemente usadas para representar condições lógicas. Exemplos:
+                        </p>
+                        <div class="example-box">
+                            <pre id="code-example4">
+let estaChovendo = false;   // Indica se está chovendo ou não
+let temSol = true;          // Indica se há sol ou não
+                            </pre>
+                            <button onclick="copyCode4()" class="copy-button">Copiar</button>
+                        </div>
+                        <li class="dados">Arrays</li>
+                        <p>
+                            Arrays são estruturas de dados que armazenam coleções ordenadas de <br>
+                            elementos. Cada elemento pode ser de um tipo diferente, permitindo a criação <br>
+                            de listas de dados. Exemplos:
+                        </p>
+                        <div class="example-box">
+                            <pre id="code-example5">
+let frutas = ["maçã", "banana", "laranja"];    // Array de strings
+let numerosPrimos = [2, 3, 5, 7, 11];           // Array de números inteiros
+                            </pre>
+                            <button onclick="copyCode5()" class="copy-button">Copiar</button>
+                        </div>
+                        <li class="dados">Objetos</li>
+                        <p>
+                            Objetos são estruturas de dados que permitem agrupar informações relacionadas <br>
+                            em pares chave-valor. Cada propriedade do objeto tem um nome exclusivo. Exemplos:
+                        </p>
+                        <div class="example-box">
+                            <pre id="code-example6">
+let pessoa = {
+    nome: "Carlos",
+    idade: 28,
+    cidade: "Rio de Janeiro"
+};   // Objeto representando informações de uma pessoa
+                            </pre>
+                            <button onclick="copyCode6()" class="copy-button">Copiar</button>
+                        </div>
+                    </ul>
+                    <p class="alinhar">
+                        Esses tipos de dados formam a base para a construção de programas em diversas <br>
+                        linguagens de programação. Ao compreender esses conceitos, você estará apto a <br>
+                        manipular e organizar dados de maneira eficaz em suas aplicações.
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+            <a href="index-JAVA-estrutura.html"><button class="button-convite">Mais!</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+
+    <script src="java/script-JAVA-variaveis.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

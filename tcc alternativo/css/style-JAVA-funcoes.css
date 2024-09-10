@@ -1,0 +1,314 @@
+/* Fonte - Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* Fonte - Great Vibes */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200&display=swap');
+
+/* Fonte - Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+/* Fonte - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500&display=swap');
+
+/* Fonte - Courier Prime */
+@import url('https://fonts.googleapis.com/css2? family= Courier+Prime & display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(#000080, #8B0000);
+    color: #fff;
+    overflow: hidden;
+}
+
+.bolhas{
+    position: absolute;
+    display: flex;
+}
+
+.bolhas span{
+    width: 30px;
+    height: 30px;
+    background-color: #FF4500;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #FF450044,
+                0 0 50px #FF4500,
+                0 0 100px #FF4500;
+    animation: animar calc(150s / var(--i)) linear infinite;
+}
+
+.bolhas span:nth-of-type(even){
+    background: #2dc3ff;
+    box-shadow: 0 0 0 10px #2dc3ff44,
+                0 0 50px #2dc3ff,
+                0 0 100px #2dc3ff;
+
+}
+
+@keyframes animar{
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+header .initial-tell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    height: 100vh;
+}
+
+header .initial-tell h1{
+    font-size: 7rem;
+    font-weight: 500;
+    font-family: 'Great Vibes',cursive;
+    transition: 500ms linear;
+    -webkit-user-select: none;
+    user-select: none;
+    text-shadow: 0 0 50px black;
+    z-index: 10;
+}
+
+header .initial-tell h1:hover{
+    text-shadow: 0 0 100px white;
+}
+
+i.bx-down-arrow{
+    position: relative;
+    right: 22.5%;
+    bottom: 5px;
+}
+
+header .initial-tell  .scroll{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    color: #fff;
+    transform: translate(0, -50%);
+    transition: all 0.5s;
+}
+
+header .initial-tell  .scroll:hover{
+    opacity: 0.7;
+}
+
+header .initial-tell  .scroll::before{
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0%, 100%{
+        opacity: 0;
+    }
+    15%, 45%{
+        opacity: 1;
+    }
+    60%{
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+}
+
+.pagina{
+    background-color: #8B0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 100%;
+}
+
+.oqe{
+    padding: 5px;
+}
+
+.alinhar{
+    text-align: center;
+}
+
+.topico1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topico2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topico3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topico4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div{
+    padding: 7px;
+}
+
+.sobre{
+    font-size: 20px;
+    padding: 5px;
+}
+
+p{
+    padding: 7px;
+    font-size: 22px;
+}
+
+h3{
+    padding: 7px;
+}
+
+li{
+    text-decoration: underline;
+    padding-top: 8px;
+    font-size: 25px;
+}
+
+.div{
+    padding: 10px;
+}
+
+.example-box {
+    flex-direction: column;
+    padding: 10px;
+    color: #f0f0f0;
+    border: 1px  solid white;
+    border-radius: 10px;
+    background-color: #2b2f4b;
+    font-family: 'Courier Prime', monospace !important;
+}
+
+.exemplo1code{
+    position: relative;
+    display: flex;
+    padding: 15px 45px 0px 0px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.copy-button {
+    cursor: pointer;
+    position: relative;
+    padding: 15px;
+    margin-left: 46%;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    border-radius: 10px;
+    transition: 500ms linear;
+}
+
+.copy-button:hover{
+    background-color: #000080;
+    transform: scale(1.1);
+}
+
+.btn-convite{
+    padding-bottom: 30px;
+}
+
+.button-convite{
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    border-radius: 10px;
+    transition: 500ms linear;
+
+}
+
+
+.button-convite:hover{
+    background-color: #000080;
+    transform: scale(1.1);
+}
+
+.scroll-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2b2f4b;
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 16px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.scroll-top:hover{
+    border-color: #fff;
+    box-shadow: none;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #8B0000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0px -10px 9px 3px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logo{
+    display: flex;
+    height: 150px;
+
+}
+
+.text-final{
+    color: #fff;
+    font-size: 20px;
+}

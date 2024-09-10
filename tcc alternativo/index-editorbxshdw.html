@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Hyperium - Editor Box Shadow</title>
+
+    <!-- Linkar - CSS -->
+    <link rel="stylesheet" href="css/style-editorbxshdw.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="content">
+            <div class="text">
+                <a href="index.html"><button class="home-btn">Home</button></a>
+            </div>
+        </div>
+    </header>
+
+    <h1>Box Shadow Editor</h1>
+
+    <div class="box-container">
+      <div id="box"></div>
+      <div id="box-container-colors">
+        <div class="input-block">
+          <label for="box-background">box:</label>
+          <input type="color" name="box-background" id="box-background" value="#40739e">
+        </div>
+        <div class="input-block">
+          <label for="box-container-background">background:</label>
+          <input type="color" name="box-container-background" id="box-container-background" value="#ffffff">
+        </div>
+      </div>
+    </div>
+    
+    <div class="generated-css-container">
+      <div id="generated-css">box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);</div>
+      <!-- Create the "Copy to Clipboard" button dynamically with JavaScript, only if "navigator.clipboard" is supported by the browser -->
+      <!-- <button id="generated-css-copy-btn">Copy</button> --> 
+    </div>
+    
+    <div class="settings">
+      <div class="input-block">
+        <label for="h-offset">h-offset</label>
+        <input type="number" name="h-offset" id="h-offset" value="10">
+      </div>
+      <div class="input-block">
+        <label for="v-offset">v-offset</label>
+        <input type="number" name="v-offset" id="v-offset" value="10">
+      </div>
+      <div class="input-block">
+        <label for="blur-radius">blur</label>
+        <input type="number" min="0" name="blur-radius" id="blur-radius" value="5">
+      </div>
+      <div class="input-block">
+        <label for="spread-radius">spread</label>
+        <input type="number" name="spread-radius" id="spread-radius" value="0">
+      </div>
+      <div class="input-block">
+        <label for="color">color</label>
+        <input type="color" name="color" id="color" value="#000000">
+      </div>
+      <div class="input-block">
+        <label for="opacity">opacity</label>
+        <input type="number" min="0" max="1" step="0.01" name="opacity" id="opacity" value="0.25">
+      </div>
+      <div class="input-block">
+        <label for="inset">inset</label>
+        <input type="checkbox" name="inset" id="inset">
+      </div>
+    </div>
+
+    <footer>
+      <div class="logo">
+          <img src="images/logo.png">
+          
+      </div>
+      <div class="text-final">
+        <p>Direitos Reservados a Hyperium @ 2024 <br>
+          Criado por Paulo Vinicius 4º Ti <br>
+          Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+           Carlos Henrique.
+      </p>
+      </div>
+    </footer>
+    
+    <script>
+      // Create the "Copy to Clipboard" button only if "navigator.clipboard" is supported by the browser
+      if (navigator.clipboard) {
+        const generatedCssContainer = document.querySelector(".generated-css-container");
+        const generatedCssCopyBtn = document.createElement("button");
+        generatedCssCopyBtn.id = "generated-css-copy-btn";
+        generatedCssCopyBtn.textContent = "Copy";
+        generatedCssContainer.appendChild(generatedCssCopyBtn);
+      }
+    </script>
+    <script src="java/script-editorbxshdw.js"></script>
+
+</body>
+</html>

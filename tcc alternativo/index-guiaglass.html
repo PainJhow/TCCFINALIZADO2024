@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Hyperium - Guia Glass</title>
+
+    <!-- linkar CSS -->
+    <link rel="stylesheet" href="css/style-guiaglass.css">
+</head>
+<body>
+    
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Glass</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina" id="inicio">
+        <div class="topico1">
+            <div class="oqe">
+                <h1>O que é o Efeito Glass ?</h1>
+            </div>
+            <div class="sobre">
+                <p>O efeito "Glass" é uma técnica de design que simula a aparência de vidro translúcido <br>
+                    em elementos da interface web. Esse efeito cria uma sensação de profundidade, elegância e <br>
+                    modernidade, oferecendo uma estética distinta e atraente aos elementos visuais.</p>
+            </div>
+        </div>
+        <div class="topico2">
+            <div class="funcionamento">
+                <h1>Como Funciona ?</h1>
+            </div>
+            <div class="sobre">
+                <ul>
+                    <li class="primeiro">Transparência e Borramento</li>
+                    <p>O efeito "Glass" é alcançado através da aplicação de transparência e borramento (blur) <br> 
+                        a um elemento. A combinação desses atributos cria a sensação de transparência <br>
+                        semelhante ao vidro.</p>
+                    <li class="segundo">Fundo e Sobreposição</li>
+                    <p>Geralmente, o efeito é criado usando um elemento de fundo translúcido com uma sobreposição <br>
+                        borrada por cima. Isso pode ser feito com a propriedade background do CSS.</p>
+                    <li class="terceiro">Propriedades do CSS</li>
+                    <p>As propriedades-chave para alcançar o efeito "Glass" incluem backdrop-filter, background-blur, <br>
+                        opacity e rgba para manipular a transparência e o desfoque do elemento.</p>
+                </ul>
+            </div>
+        </div>
+         <div class="topico3">
+            <div class="bene">
+                <h1>Benefícios e Aplicações</h1>
+            </div>
+            <div class="sobre">
+                <ul>
+                    <li class="primeiro">Estética Moderna</li>
+                    <p>O efeito "Glass" oferece uma aparência contemporânea e elegante para elementos <br>
+                        de design.</p>
+                    <li class="segundo">Destaque de Elementos</li>
+                    <p>Pode ser usado para destacar botões, barras de navegação, caixas de diálogo e outros elementos <br>
+                        da interface.</p>
+                    <li class="terceiro">Personalização</li>
+                    <p>É altamente personalizável, permitindo ajustar a intensidade do efeito para se adequar ao <br>
+                        estilo do projeto.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="topico4">
+            <div class="exemplo">
+                <h1>Exemplos Práticos</h1>
+            </div>
+            <div class="exemplos">
+                <ul>
+                    <li class="code-exemplo">Botões com Efeito "Glass"</li>
+                    <p>Um exemplo comum é a criação de botões com efeito "Glass", onde se aplica um fundo translúcido <br>
+                        e borramento para dar a sensação de profundidade. Por exemplo:</p>
+                    <div class="example-box">
+                        <pre id="code-example">
+                            .glass-button {
+                                background-color: rgba(255, 255, 255, 0.3);
+                                backdrop-filter: blur(10px);
+                                border: none;
+                                padding: 10px 20px;
+                                color: white;
+                                /* Outros estilos */
+                            }
+                        </pre>
+                        <button onclick="copyCode()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">Caixas Modais</li>
+                    <p>As caixas modais com efeito "Glass" são populares, utilizando uma sobreposição translúcida com <br>
+                        desfoque para destacar conteúdos importantes. Por exemplo:</p>
+                    <div class="example-box">
+                        <pre id="code-example2">
+                            .glass-modal {
+                                background-color: rgba(0, 0, 0, 0.5);
+                                backdrop-filter: blur(5px);
+                                /* Outros estilos */
+                            }
+                        </pre>
+                        <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="code-exemplo">Barras de Navegação</li>
+                    <p>As barras de navegação podem receber o efeito "Glass" para criar um visual atraente e moderno. Por exemplo:</p>
+                    <div class="example-box">
+                        <pre id="code-example3">
+                            .glass-navbar {
+                                background-color: rgba(255, 255, 255, 0.2);
+                                backdrop-filter: blur(8px);
+                                /* Outros estilos */
+                            }
+                        </pre>
+                        <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                    </div>
+                </ul>
+            </div> 
+        </div>
+        <div class="topico5">
+            <div class="pratica">
+                <h1>Experimente testar nosso Editor Glass</h1>
+            </div>
+            <div class="sobre">
+                <p>Convido todos os entusiastas de design e desenvolvimento a experimentarem o meu editor de Efeito Glass para CSS. <br> 
+                    Com uma interface amigável e opções de personalização, é uma ferramenta ideal para adicionar elegância aos seus <br>
+                    projetos web. Não perca a chance de dar um toque moderno e sofisticado - experimente agora mesmo e veja seus <br>
+                    designs ganharem vida!</p>
+            </div>
+        </div>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+            <a href="index-glasseditor.html"><button class="button-convite">Editor</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+    
+    <script src="java/script-guiaglass.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Controle de Fluxo JavaScript - Hyperium</title>
+
+    <!-- Linkar - CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-estrutura.css">
+
+</head>
+<body>
+    
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Fluxos</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="oqe">
+                <h1>Estruturas de Controle de Fluxo em JavaScript</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Estruturas de Controle de Fluxo em JavaScript são mecanismos que permitem direcionar o <br>
+                    fluxo de execução do código com base em condições específicas ou repetir blocos de <br>
+                    código enquanto uma condição é verdadeira.
+                </p>
+            </div>
+        </div>
+        <div class="topico2">
+            <div class="title">
+                <h1>If, else, else if, Switch case e Loops (for, while)</h1>
+            </div>
+            <div class="sobre">
+                <ul>
+                    <li class="fluxos">if, else, else if </li>
+                    <p>
+                        O 'if' é como um farol que guia o caminho do nosso programa com base em condições. Se <br>
+                        uma condição for verdadeira, uma ação é executada; caso contrário, podemos definir <br>
+                        uma alternativa usando 'else'. Quando temos múltiplas condições, utilizamos 'else if'. <br>
+                        Aqui está um exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example1">
+    let idade = 18;
+    
+    if (idade >= 18) {
+        console.log("Você é maior de idade.");
+    } else {
+        console.log("Você é menor de idade.");
+    }
+                        </pre>
+                        <button onclick="copyCode1()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="fluxos">Switch Case </li>
+                    <p>
+                        O 'switch' é como um menu de opções, permitindo comparar uma variável com uma <br>
+                        lista de valores e executar um bloco de código correspondente ao valor <br>
+                        encontrado. Aqui está como usar em JavaScript:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example2">
+    let diaDaSemana = 3;
+    let nomeDia;
+    
+    switch (diaDaSemana) {
+        case 1:
+            nomeDia = "Domingo";
+            break;
+        case 2:
+            nomeDia = "Segunda-feira";
+            break;
+        case 3:
+            nomeDia = "Terça-feira";
+            break;
+        default:
+            nomeDia = "Dia inválido";
+    }
+    
+    console.log("Hoje é " + nomeDia);
+                        </pre>
+                        <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                    </div>
+                    <li class="fluxos">Loops (for, while) </li>
+                    <p>
+                        Os loops são como máquinas incansáveis que executam tarefas repetidamente até <br>
+                        que uma condição seja atendida. O loop 'for' é usado quando sabemos exatamente <br>
+                        quantas vezes queremos repetir uma tarefa, enquanto o loop 'while' é usado quando <br>
+                        queremos repetir uma tarefa até que uma condição seja falsa. Aqui estão exemplos <br>
+                        em JavaScript:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example3">
+    // Loop for
+    for (let i = 0; i &lt; 5; i++) {
+        console.log("Número:", i);
+    }
+    
+    // Loop while
+    let contador = 0;
+    while (contador &lt; 5) {
+        console.log("Contagem:", contador);
+        contador++;
+    }
+                        </pre>
+                        <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                    </div>
+                </ul>
+                <p class="alinhar">
+                    Dominar as Estruturas de Controle de Fluxo em JavaScript é crucial para qualquer <br>
+                    desenvolvedor web. Com essas ferramentas, você pode criar lógica dinâmica em seus <br>
+                    projetos, tornando suas aplicações mais poderosas e eficientes. Continue praticando e <br>
+                    explorando novos conceitos para aprimorar suas habilidades de programação. Estamos <br>
+                    aqui para ajudar em cada passo do caminho!
+                </p>
+            </div>
+        </div>
+        
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+            <a href="index-JAVA-funcoes.html"><button class="button-convite">Mais!</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+
+    <script src="java/script-JAVA-estrutura.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

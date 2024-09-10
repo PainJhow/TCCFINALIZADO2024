@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Introdução no JavaScript - Hyperium</title>
+
+    <!-- Linkar - CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-INTRODUCAO.css">
+
+</head>
+<body>
+
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">JavaScript</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="oqe">
+                <h1>Introdução ao JavaScript: Desvendando a Linguagem da Web Interativa</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Seja bem-vindo ao emocionante mundo do JavaScript, a linguagem de programação que <br>
+                    dá vida às suas páginas web! Nesta seção, vamos explorar os conceitos fundamentais <br>
+                    do JavaScript, entender seu papel no desenvolvimento web e aprender como incorporar <br>
+                    código JavaScript em suas páginas HTML.
+                </p>
+            </div>
+        </div>
+        <div class="topico2">
+            <div class="title">
+                <h1>O que é JavaScript?</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    JavaScript, frequentemente abreviado como JS, é uma linguagem de programação de <br>
+                    alto nível e dinâmica. Desenvolvida inicialmente para tornar as páginas web <br>
+                    interativas, ela evoluiu para ser utilizada em diversos ambientes, incluindo <br>
+                    servidores e aplicativos móveis. Sua sintaxe é semelhante a outras linguagens de <br>
+                    programação, tornando-a acessível a iniciantes e poderosa para desenvolvedores <br>
+                    experientes.
+                </p>
+            </div>
+        </div>
+        <div class="topico3">
+            <div class="title">
+                <h1>Papel do JavaScript no Desenvolvimento Web</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Enquanto HTML é responsável pela estrutura da página e CSS pelo estilo, JavaScript <br>
+                    entra em cena para proporcionar interatividade. Com o JavaScript, é possível criar <br>
+                    elementos dinâmicos, responder a ações do usuário e modificar o conteúdo da página <br>
+                    em tempo real. Se você já se deparou com um formulário que valida seus dados antes <br>
+                    de ser enviado ou uma galeria de imagens que muda automaticamente, você já <br>
+                    experimentou o poder do JavaScript.
+                </p>
+            </div>
+        </div>
+        <div class="topico4">
+            <div class="title">
+                <h1>Incluindo JavaScript em Seu Site</h1>
+            </div>
+            <div class="sobre">
+                <p>
+                    Adicionar JavaScript a suas páginas HTML é simples. Podemos fazer isso incorporando <br>
+                    scripts diretamente no documento. Veja um exemplo prático:
+                </p>
+                <div class="example-box">
+                    <pre id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Meu Site com JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+
+    &lt;script&gt;
+        &lt;-- Seu código JavaScript vai aqui --&gt;
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                    <button onclick="copyCode()" class="copy-button">Copiar</button>
+                </div>
+                <p class="alinhar">
+                    Aqui, o código JavaScript é inserido entre as tags &lt;script&gt; e &lt;/script&gt;. Isso <br>
+                    permite que você adicione funcionalidades e interatividade à sua página.
+                </p>
+            </div>
+        </div>
+        <div class="topico5">
+            <div class="title">
+                <h1>Próximos Passos: Variáveis e Tipos de Dados</h1>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Agora que compreendemos os fundamentos, vamos aprofundar nosso conhecimento <br>
+                    explorando variáveis e tipos de dados em JavaScript. Esses conceitos são essenciais <br>
+                    para armazenar informações e manipular dados dinamicamente em suas aplicações web. <br>
+                </p>
+                <p class="alinhar">
+                    Prepare-se para uma jornada emocionante de aprendizado, onde você ganhará as <br>
+                    habilidades necessárias para criar páginas web interativas e envolventes. No próximo <br>
+                    capítulo, mergulharemos fundo nas variáveis, entendendo como declará-las e <br>
+                    utilizá-las para tornar seu código mais dinâmico. <br>
+                </p>
+                <h3 class="alinhar">Continue explorando e programando!</h3>
+            </div>
+        </div>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+            <a href="index-JAVA-variaveis.html"><button class="button-convite">Mais!</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+
+    <script src="java/script-JAVA-INTRODUCAO.js"></script>
+    <script src="java/script.js"></script>
+</body>
+</html>

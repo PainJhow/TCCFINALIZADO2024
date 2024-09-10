@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Gestão Debugging - Hyperium</title>
+
+    <!-- Linkar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-JAVA-Gestao.css">
+
+</head>
+<body>
+
+    <!-- Divisão - Topo do Site - Bem Vindo//-->
+    <header>
+        <div class="bolhas">
+            <span style="--i:18"></span>
+            <span style="--i:07"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:32"></span>
+            <span style="--i:03"></span>
+            <span style="--i:09"></span>
+            <span style="--i:29"></span>
+            <span style="--i:12"></span>
+            <span style="--i:06"></span>
+            <span style="--i:19"></span>
+            <span style="--i:05"></span>
+            <span style="--i:11"></span>
+            <span style="--i:28"></span>
+            <span style="--i:17"></span>
+            <span style="--i:02"></span>
+            <span style="--i:21"></span>
+            <span style="--i:23"></span>
+            <span style="--i:08"></span>
+            <span style="--i:30"></span>
+            <span style="--i:01"></span>
+            <span style="--i:22"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:26"></span>
+            <span style="--i:15"></span>
+            <span style="--i:04"></span>
+            <span style="--i:27"></span>
+            <span style="--i:16"></span>
+            <span style="--i:24"></span>
+            <span style="--i:35"></span>
+            <span style="--i:33"></span>
+            <span style="--i:31"></span>
+            <span style="--i:34"></span>
+            <span style="--i:20"></span>
+        </div>
+        <div class="initial-tell">
+            <h1 class="texto-central">Gestão</h1>
+            <a href="#inicio" class="scroll"><i class='bx-down-arrow'>
+                <img src="images/seta-baixo.png" alt="">
+            </i></a>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <div class="topico1" id="inicio">
+            <div class="title">
+                <h1>Gestão de Erros em JavaScript</h1>
+            </div>
+            <div class="oqe">
+                <div class="sobre">
+                    <p class="alinhar">
+                        Erros em JavaScript podem ocorrer por diversos motivos, como referências a <br>
+                        variáveis inexistentes, erros de sintaxe, ou problemas de lógica. Gerenciar <br>
+                        esses erros de forma eficaz é essencial para garantir que seu aplicativo <br>
+                        funcione corretamente e ofereça uma boa experiência ao usuário.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="topico2">
+            <ol>
+                <li>Blocos 'try...catch'</li>
+                <div class="sobre">
+                  <p>
+                    O bloco try...catch é uma das maneiras mais comuns de lidar com erros em JavaScript. <br>
+                    Ele permite que você execute um bloco de código e capture qualquer exceção que <br>
+                    ocorra, para que você possa tratá-la de forma controlada.
+                  </p>
+                  <p>Exemplo:</p>
+                
+                <div class="example-box">
+                    <pre id="code-example1">
+try {
+    // Código que pode gerar um erro
+    let resultado = divisao(10, 0);
+    console.log(resultado);
+} catch (erro) {
+    // Tratamento do erro
+    console.error('Ocorreu um erro: ', erro.message);
+}
+
+function divisao(a, b) {
+    if (b === 0) {
+        throw new Error('Divisão por zero não permitida');
+    }
+    return a / b;
+}
+                    </pre>
+                    <button onclick="copyCode1()" class="copy-button">Copiar</button>
+                </div>
+                <p>
+                    Neste exemplo, o bloco 'try' tenta executar uma divisão. Se o divisor for zero, um <br>
+                    erro é lançado ('throw new Error'). O bloco 'catch' captura esse erro e exibe uma <br>
+                    mensagem amigável.
+                </p>
+                </div>
+                <li>Tratamento Global de Erros</li>
+                <div class="sobre">
+                    <p>
+                        Em aplicações maiores, pode ser útil configurar um tratamento global de erros, <br>
+                        para capturar exceções que não foram tratadas em outros lugares do código.
+                    </p>
+                    <p>
+                        Exemplo com 'window.onerror':
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example2">
+window.onerror = function(mensagem, fonte, linha, coluna, erro) {
+    console.error(`Erro: ${mensagem} em ${fonte}:${linha}:${coluna}`);
+    // Aqui você pode enviar os detalhes do erro para um servidor para análise posterior
+    return true; // Impede que o erro seja exibido no console padrão do navegador
+};
+                        </pre>
+                        <button onclick="copyCode2()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>Exemplo com 'window.addEventListener':</p>
+                    <div class="example-box">
+                        <pre id="code-example3">
+window.addEventListener('error', function(evento) {
+    console.error('Erro capturado:', evento.message);
+    // Você pode enviar os detalhes do erro para um servidor aqui
+});
+                        </pre>
+                        <button onclick="copyCode3()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Esses métodos permitem capturar erros em nível global, o que pode ser útil para <br>
+                        logar erros em produção e monitorar problemas que os usuários enfrentam.
+                    </p>
+                </div>
+                <li>Exceções Personalizadas</li>
+                <div class="sobre">
+                    <p>
+                        Você pode criar exceções personalizadas para situações específicas, melhorando <br>
+                        a clareza do código e facilitando o tratamento de erros.
+                    </p>
+                    <p>
+                        Exemplo:
+                    </p>
+                    <div class="example-box">
+                        <pre id="code-example4">
+    class ValidacaoErro extends Error {
+        constructor(mensagem) {
+            super(mensagem);
+            this.name = 'ValidacaoErro';
+        }
+    }
+    
+    function validarEntrada(idade) {
+        if (idade &lt; 18) {
+            throw new ValidacaoErro('A idade deve ser maior que 18 anos.');
+        }
+        return true;
+    }
+    
+    try {
+        validarEntrada(15);
+    } catch (erro) {
+        if (erro instanceof ValidacaoErro) {
+            console.warn(erro.message);
+        } else {
+            throw erro; // Rethrow if it's an unknown error
+        }
+    }
+                        </pre>
+                        <button onclick="copyCode4()" class="copy-button">Copiar</button>
+                    </div>
+                    <p>
+                        Neste exemplo, ValidacaoErro é uma exceção personalizada que é lançada se a <br>
+                        entrada não atender aos critérios definidos.
+                    </p>
+                </div>
+            </ol>
+        </div>
+        <div class="topico3">
+            <div class="title">
+                <h2>
+                    Ferramentas de Debugging no Navegador
+                </h2>
+            </div>
+            <div class="sobre">
+                <p class="alinhar">
+                    Os navegadores modernos vêm com ferramentas de desenvolvimento (DevTools) que <br>
+                    facilitam o processo de debugging. Abaixo estão algumas das funcionalidades mais <br>
+                    úteis:
+                </p>
+            </div>
+            <div class="sobre">
+                <ol>
+                    <li>Console do JavaScript</li>
+                    <p>
+                        O console é um dos recursos mais usados para debugging. Ele permite que você <br>
+                        visualize logs, erros, e até execute JavaScript diretamente no contexto da página.
+                    </p>
+                    <p>Exemplo:</p>
+                    <div class="example-box">
+                        <pre id="code-example5">
+console.log('Mensagem informativa');
+console.warn('Aviso de algo que pode não estar certo');
+console.error('Mensagem de erro');
+                        </pre>
+                        <button onclick="copyCode5()" class="copy-button">Copiar</button>
+                    </div>
+                    <li>Breakpoints</li>
+                    <p>
+                        Breakpoints permitem que você pause a execução do código em pontos específicos <br>
+                        para inspecionar o estado das variáveis e entender o fluxo do programa.
+                    </p>
+                    <ul>
+                        <li class="li-menor">Adicionando um Breakpoint: Clique na linha de código desejada no painel <br>
+                            "Sources" das DevTools para adicionar um breakpoint.</li>
+                        <li class="li-menor">Exemplo Prático:</li>
+                            <div class="example-box">
+                                <pre id="code-example6">
+function somar(a, b) {
+    return a + b; // Adicione um breakpoint aqui
+}
+
+let resultado = somar(2, 3);
+console.log('Resultado:', resultado);
+                                </pre>
+                                <button onclick="copyCode6()" class="copy-button">Copiar</button>
+                            </div>
+                            <p>
+                                Quando o código atinge o breakpoint, a execução para, e você pode <br>
+                                inspecionar as variáveis 'a' e 'b' para ver seus valores.
+                            </p>
+                    </ul>
+                    <li>Watch Expressions</li>
+                    <div class="sobre">
+                        <p>
+                            Watch Expressions permitem que você monitore o valor de expressões <br>
+                            JavaScript enquanto o código é executado. Isso é útil para rastrear como <br>
+                            os valores mudam ao longo do tempo.
+                        </p>
+                        <p>Exemplo:</p>
+                        <div class="example-box">
+                            <pre id="code-example7">
+    function calcularArea(raio) {
+        let area = Math.PI * raio * raio;
+        return area;
+    }
+    
+    let resultado = calcularArea(5);
+    console.log('Área:', resultado);
+                            </pre>
+                            <button onclick="copyCode7()" class="copy-button">Copiar</button>
+                        </div>
+                        <p>
+                            Adicione uma expressão como 'a + b' para monitorar diretamente como o <br>
+                            resultado muda durante a execução do código.
+                        </p>
+                    </div>
+                    <li>Call Stack</li>
+                    <div class="sobre">
+                        <p>
+                            A Call Stack mostra a sequência de chamadas de função que levaram ao ponto <br>
+                            atual de execução. Isso ajuda a entender como o código chegou a um determinado estado.
+                        </p>
+                        <div class="example-box">
+                            <pre id="code-example8">
+function a() {
+    b();
+}
+
+function b() {
+    c();
+}
+
+function c() {
+    console.log('Estamos na função c'); // Veja a call stack aqui
+}
+
+a();
+                            </pre>
+                            <button onclick="copyCode8()" class="copy-button">Copiar</button>
+                        </div>
+                        <p>
+                            Quando a função 'c' é chamada, a call stack mostrará a sequência de chamadas <br>
+                            'a -> b -> c', permitindo que você rastreie o caminho de execução.
+                        </p>
+                    </div>
+                    <li>Ferramenta de Network</li>
+                    <div class="sobre">
+                        <p>
+                            O painel "Network" permite inspecionar todas as requisições HTTP feitas pela <br> 
+                            página, incluindo requisições AJAX. Você pode ver detalhes como status, <br>
+                            cabeçalhos, e conteúdo da resposta.
+                        </p>
+                        <ul>
+                            <li class="li-menor">Abra o painel "Network".</li>
+                            <li class="li-menor">Realize uma requisição AJAX na página.</li>
+                            <li class="li-menor">Inspecione a requisição para ver detalhes como tempo de resposta, <br>
+                                conteúdo e possíveis erros.</li>
+                        </ul>
+                        <p class="alinhar">
+                            Com essas práticas e ferramentas, você estará mais bem preparado para lidar <br> 
+                            com erros e fazer debugging em JavaScript, garantindo que seus projetos <br>
+                            sejam robustos e funcionais.
+                        </p>
+                    </div>
+
+                </ol>
+            </div>
+        </div>
+        <div class="btn-convite">
+            <a href="index.html"><button class="button-convite">Home</button></a>
+            <a href="index-JAVA-ES6.html"><button class="button-convite">Mais!</button></a>
+         </div>
+     </div>
+    
+
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="text-final">
+            <p>Direitos Reservados a Hyperium @ 2024 <br>
+                Criado por Paulo Vinicius 4º Ti <br>
+                Aluno de Rafael Sulivan & Jackson Zacarias & <br>
+                 Carlos Henrique.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Botão de Voltar para o Topo -->
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx-up-arrow'>
+            <img src="images/seta-cima.png" alt="">
+        </i>
+    </button>
+    
+    <script src="java/script-JAVA-Gestao.js"></script>
+    <script src="java/script.js"></script>
+    </body>

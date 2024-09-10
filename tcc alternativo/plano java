@@ -1,0 +1,53 @@
+Introdução ao JavaScript: FEITO
+
+Explicação básica sobre o que é JavaScript e seu papel no desenvolvimento web.
+Como incluir código JavaScript em páginas HTML.
+
+Variáveis e Tipos de Dados:  FEITO
+
+Declaração de variáveis.
+Tipos de dados (números, strings, booleanos, arrays, objetos).
+
+Estruturas de Controle de Fluxo:  FEITO
+
+If, else, else if.
+Switch case.
+Loops (for, while).
+
+Funções: FEITO
+
+Como declarar funções.
+Parâmetros e argumentos de função.
+Retorno de funções.
+
+Manipulação do DOM: FEITO
+
+Selecionar elementos HTML.
+Modificar conteúdo, atributos e estilos.
+Manipulação de eventos.
+
+Trabalhando com Arrays e Objetos: FEITO
+
+Métodos de array (push, pop, shift, unshift, map, filter, etc.).
+Manipulação de objetos.
+
+AJAX e Requisições Assíncronas: FEITO
+
+Introdução a AJAX.
+Requisições HTTP assíncronas com fetch ou XMLHttpRequest.
+
+Gestão de Erros e Debugging: FEITO
+
+Como lidar com erros.
+Ferramentas de debugging no navegador.
+
+ES6 e Recursos Modernos:feito
+
+Const e let.
+Arrow functions.
+Destructuring.
+Promises.
+
+Projetos Pequenos e Exemplos Práticos:
+
+Criar exemplos práticos para consolidar o aprendizado.
